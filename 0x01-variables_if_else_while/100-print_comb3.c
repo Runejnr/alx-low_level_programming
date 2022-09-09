@@ -1,30 +1,35 @@
 #include <stdio.h>
 
 /**
-* main - Print combinations of two digit numbers
-*
-* Return: Always 0 (Success)
-*/
+ * main - print all numbers from 00 to 99 where the first numb is < last numb
+ *
+ *
+ *
+ * Return: 0
+ *
+ */
+
 int main(void)
+
 {
-  int tens;
-  int ones;
+	int i, j;
 
-  for (tens = 0; tens <= 9; tens++)
-    {
-      for (ones = tens + 1; ones <= 9; ones++)
+	for (i = 0; i < 10; i++)
 	{
-	  putchar(tens + '0');
-	  putchar(ones + '0');
-
-	  if (tens < 8)
-	    {
-	      putchar(',');
-	      putchar(' ');
-	    }
+		for (j = 0; j < 10; j++)
+		{
+			if (i < j)
+			{
+				putchar(i + 48);
+				putchar(j + 48);
+				if (i * j != 72)
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
+		}
 	}
-    }
-  putchar('\n');
-
-  return (0);
+	putchar(10);
+	return (0);
 }
