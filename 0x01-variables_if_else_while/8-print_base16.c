@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include <stdlib.h>
-
 /**
  * main - main block
  *
@@ -13,23 +11,14 @@
  */
 
 int main(void)
-
 {
-	char d = '0';
+	int i;
 
-	while (d <= '9')
-	{
-		putchar(d);
-		d++;
-	}
+	for (i = 48; i < 58; i++)
+		putchar(i);
 
-	char c = 'a';
-
-	while (c <= 'f')
-	{
-		putchar(c);
-		c++;
-	}
+	for (i = 97; i < 103; i++)
+		putchar(i);
 
 	putchar('\n');
 	return (0);
