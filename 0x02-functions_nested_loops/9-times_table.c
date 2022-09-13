@@ -1,26 +1,41 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * times_table - prints the times table from 0 to 9
  *
- * Return: Always 0.
+ *
+ * Return: 0
+ *
  */
-void times_table(void);
+
+void times_table(void)
 {
+	int i, j, k;
 
-n=int(input(1))
-for row in range(1,n+1):
-    for col in range(1,n+1):
-        print(row*col, end="\t")
-    print()
-
-
-n=int(input(1))
-for row in range(1,n+1):
-    print(*("{:3}".format(row*col) for col in range(1, n+1)))
-
-
-for row in range(1, n + 1):
-    print(*(f"{row*col:3}" for col in range(1, n + 1)))
-
-  }
+	for (i = 0; i <= 9; i++)
+	{
+		for (j = 0; j <= 9; j++)
+		{
+			k = i * j;
+			if (k < 10)
+			{
+				if (j > 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				_putchar(k + '0');
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(k / 10 + '0');
+				_putchar(k % 10 + '0');
+			}
+		}
+		_putchar ('\n');
+	}
+	
+}
