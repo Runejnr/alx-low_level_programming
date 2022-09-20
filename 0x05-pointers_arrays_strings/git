@@ -4,4 +4,8 @@ git add .
 
 git commit -m 'Omo'
 
-git push
+git 
+
+push https://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@github.com/Runejnr/alx-lo
+
+w_level_programming.git
