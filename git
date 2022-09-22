@@ -1,0 +1,7 @@
+#!/bin/bash
+
+git add .
+
+git commit -m 'Done'
+
+git push https://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@github.com/Runejnr/alx-low_level_programming.git
